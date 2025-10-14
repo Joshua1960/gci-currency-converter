@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GCI Currency Converter</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+      <p class="logo">GCI CURRENCY CONVERTER</p>
+      <button class="main-button hide-small-button" onclick="toConverter()">Convert</button>
+    </nav>
+
+    <!-- MAIN CONTAINER -->
+    <section class="main-cont">
+      <!-- LEFT SECTION -->
+      <div class="side-one">
+        <h1 class="side-one-heading">
+          GCI Byte Busters Currency Converter App
+        </h1>
+        <p class="side-one-subheading">
+          Check current exchange rates and use free, easy currency tools.
+        </p>
+        <button onclick="toConverter()" class="main-button">
+          Convert Currency
+        </button>
+        <div class="rating">
+          ⭐⭐⭐⭐⭐
+          <span>5-star rating</span>
+        </div>
+      </div>
+
+      <!-- RIGHT SECTION -->
+      <div class="side-two">
+        <img src="./currnecy-img.png" alt="Currency illustration" />
+      </div>
+    </section>
+    <script>
+      function toConverter() {
+        window.location.href = "./converter.html";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exchange Rates</title>
+    <link rel="stylesheet" href="./converter.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="header">
+          <h2>Exchange Rates</h2>
+          <button class="menu-btn">⋮</button>
+        </div>
+
+        <div class="tabs">
+          <button class="tab" onclick="toConverter()">
+            Currency Calculator
+          </button>
+          <button class="tab active">Exchange Rates</button>
+        </div>
+
+        <div class="content">
+          <h3>Popular Currencies</h3>
+          <div class="table">
+            <div class="table-header">
+              <span>Currency</span>
+              <span>Change</span>
+              <span>Rate</span>
+            </div>
+
+            <div class="table-row">
+              <div class="currency">
+                <img src="https://flagcdn.com/w40/eu.png" alt="EUR" />
+                <span>EUR - Euro</span>
+              </div>
+              <span class="change positive">+2%</span>
+              <span class="rate">1.17424</span>
+            </div>
+
+            <div class="table-row">
+              <div class="currency">
+                <img src="https://flagcdn.com/w40/us.png" alt="USD" />
+                <span>USD - American dollar</span>
+              </div>
+              <span class="change negative">-0.2%</span>
+              <span class="rate">1.27375</span>
+            </div>
+
+            <div class="table-row">
+              <div class="currency">
+                <img src="https://flagcdn.com/w40/gb.png" alt="GBP" />
+                <span>GBP - British Pound</span>
+              </div>
+              <span class="change negative">-0.2%</span>
+              <span class="rate">0.85162</span>
+            </div>
+
+            <div class="table-row">
+              <div class="currency">
+                <img src="https://flagcdn.com/w40/ca.png" alt="CAD" />
+                <span>CAD - Canadian dollar</span>
+              </div>
+              <span class="change positive">+0.1%</span>
+              <span class="rate">1.48216</span>
+            </div>
+
+            <div class="table-row">
+              <div class="currency">
+                <img src="https://flagcdn.com/w40/se.png" alt="SEK" />
+                <span>SEK - Swedish kroner</span>
+              </div>
+              <span class="change positive">+0.2%</span>
+              <span class="rate">13.59391</span>
+            </div>
+
+            <div class="table-row">
+              <div class="currency">
+                <img src="https://flagcdn.com/w40/no.png" alt="NOK" />
+                <span>NOK - Norwegian kroner</span>
+              </div>
+              <span class="change negative">-0.1%</span>
+              <span class="rate">13.46425</span>
+            </div>
+
+            <div class="table-row">
+              <div class="currency">
+                <img src="https://flagcdn.com/w40/dk.png" alt="DKK" />
+                <span>DKK - Danish kroner</span>
+              </div>
+              <span class="change positive">+1.2%</span>
+              <span class="rate">8.76116</span>
+            </div>
+          </div>
+
+          <button class="back-to-home btn" onclick="toHomepage()">
+            Back to Homepage
+          </button>
+
+          <p class="update-time">Last updated: 26-05-2024 - 21:30 UTC</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function toConverter() {
+        window.location.href = "./converter.html";
+      }
+      function toHomepage() {
+        window.location.href = "./index.html";
+      }
+    </script>
+  </body>
+</html>
