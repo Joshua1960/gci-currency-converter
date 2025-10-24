@@ -55,7 +55,7 @@ body {
   font-weight: 500;
   transition: all 0.3s ease;
 }
-.tab.active {
+.active {
   background: #0e1433;
   color: #fff;
 }
